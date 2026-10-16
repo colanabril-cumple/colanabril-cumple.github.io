@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#38251d">
+<title>More · Mis 18</title>
+<style>
+:root{--choco:#38251d;--coffee:#674633;--cream:#f4eadb;--sand:#d8c1a3;--ink:#2d211b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--choco);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+.page{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:24px;position:relative;overflow:hidden}
+.page:before,.page:after{content:"";position:absolute;inset:14px;border:1px solid #d8c1a366;pointer-events:none}
+.page:after{inset:21px;border-color:#d8c1a322}
+.animal{position:absolute;inset:0;opacity:.09;pointer-events:none;background-image:radial-gradient(ellipse at 20% 20%,transparent 0 13px,#e0c4a0 14px 17px,transparent 18px),radial-gradient(ellipse at 75% 60%,transparent 0 18px,#e0c4a0 19px 23px,transparent 24px),radial-gradient(ellipse at 45% 85%,transparent 0 12px,#e0c4a0 13px 17px,transparent 18px);background-size:95px 85px,125px 110px,80px 100px}
+.invite{width:min(100%,560px);text-align:center;position:relative;padding:42px 20px 38px}
+.kicker{letter-spacing:.28em;text-transform:uppercase;font:10px/1.7 Arial,sans-serif;color:var(--sand)}
+.flourish{font-size:24px;color:var(--sand);margin:18px 0}
+h1{font-size:clamp(44px,10vw,76px);font-weight:400;line-height:.98;margin:14px 0 8px;letter-spacing:-.04em}
+h1 span{display:block;font-style:italic;font-size:.63em;margin-top:12px;color:var(--sand);letter-spacing:.01em}
+.age{font-size:clamp(80px,22vw,132px);line-height:.9;color:var(--sand);font-weight:400;margin:16px 0 12px}
+.subtitle{font:11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.24em;margin:0;color:#f4eadbc9}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--sand),transparent);margin:28px auto;width:min(280px,80%)}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:18px 10px;margin:24px auto;max-width:390px}
+.detail{padding:5px}
+.detail strong{display:block;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin-bottom:8px}
+.detail span{font-size:17px;line-height:1.35}
+.venue{grid-column:1/-1}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:390px;margin:25px auto}
+.unit{border:1px solid #d8c1a355;padding:12px 3px 10px;background:#ffffff05}
+.unit b{display:block;font-size:25px;font-weight:400;color:var(--sand)}
+.unit small{font:9px Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em}
+.note{font-size:17px;font-style:italic;line-height:1.5;max-width:360px;margin:20px auto;color:#f4eadbdc}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:25px}
+a.btn{display:inline-block;text-decoration:none;padding:13px 18px;border:1px solid var(--sand);color:var(--cream);font:10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;transition:.2s}
+a.btn.primary{background:var(--sand);color:var(--ink)}
+a.btn:hover{transform:translateY(-2px);opacity:.88}
+.footer{font:9px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#d8c1a399;margin-top:28px}
+@media(max-width:380px){.invite{padding:32px 12px}.details{gap:14px 4px}.detail span{font-size:15px}.unit b{font-size:21px}.page{padding:18px}}
+</style>
+</head>
+<body>
+<main class="page">
+<div class="animal"></div>
+<section class="invite" aria-label="Invitación a los 18 de More">
+<div class="kicker">Una noche para recordar</div>
+<div class="flourish">✦</div>
+<p class="subtitle">Te invito a festejar</p>
+<h1>More<span>mis</span></h1>
+<div class="age">18</div>
+<p class="subtitle">Una nueva vuelta al sol</p>
+<div class="rule"></div>
+<p class="note">Me encantaría compartir esta noche tan especial con vos.<br>¡Te espero para festejar juntos!</p>
+<div class="details">
+<div class="detail"><strong>Fecha</strong><span>Sábado<br>28 de noviembre</span></div>
+<div class="detail"><strong>Hora</strong><span>18:00 hs</span></div>
+<div class="detail venue"><strong>Lugar</strong><a class="btn" href="https://maps.app.goo.gl/3T4kxHPMpyof8beHA?g_st=iw" target="_blank" rel="noopener">Ver ubicación</a></div>
+<div class="detail venue"><strong>Dress code</strong><span>Marrón · Bordo · Negro · Blanco<br><em>NO animal print</em></span></div>
+<div class="detail venue"><strong>Importante</strong><span>Traer lo que van a tomar</span></div>
+</div>
+<div class="rule"></div>
+<p class="note" style="font-size:15px">Confirmá tu asistencia antes del <strong>31 de octubre</strong>.</p>
+<div class="buttons">
+<a class="btn primary" id="rsvp" href="https://wa.me/5491122828612?text=Hola%20More%2C%20te%20confirmo%20mi%20asistencia%20a%20tus%2018%20%F0%9F%A4%8E" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+</div>
+<div class="footer">Con cariño · More · 2026</div>
+</section>
+</main>
+</body>
+</html>
